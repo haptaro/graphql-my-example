@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'one.apps.OneConfig',
     'graphene_django',
     'django_extensions',
+    'ingredients.apps.IngredientsConfig',
 ]
 
 MIDDLEWARE = [
