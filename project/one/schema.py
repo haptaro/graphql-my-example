@@ -6,12 +6,13 @@ from .models import MyModel
 class MyModelType(DjangoObjectType):
     class Meta:
         model = MyModel
+        fields = ("id", "name")
 
 
 class Query(graphene.ObjectType):
     mymodels = graphene.List(MyModelType)
 
-    def resolve_mymodel(self, info):
+    def resolve_mymodels(self, info):
         return MyModel.objects.all()
 
 

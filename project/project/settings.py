@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'one.apps.OneConfig',
     'graphene_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-GRAPHENE = {
-    'SCHEMA': 'one.schema.schema',
-}
+# GRAPHENE = {
+#     'SCHEMA': 'one.schema.schema',
+# }
